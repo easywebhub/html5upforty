@@ -1,63 +1,104 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <!-- <base href="{{global.github-url}}" > -->
-  <base href="." >
-  <title>{{global.title}}</title>
-  <meta name="description" content="{{ global.description }}">
-  <meta name="keywords" content="{{ global.meta-tag.keywords }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+{{#extend "default"}} {{#content "main"}}
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/github.min.css">
-  <link rel="stylesheet" href="css/style.css">
+<!-- Introduction -->
+	<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>{{banner.title}}</h1>
+							</header>
+							<div class="content">
+								<p>{{{banner.metadata}}}</p>
+								<ul class="actions">
+									<li><a href="{{banner.actions.url}}" class="button next scrolly">{{banner.actions.title}}</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+                   
+				<!-- Main -->
+					<div id="main">
+                             
+						<!-- One -->
+							<section id="{{sectionOne.id}}" class="{{sectionOne.class}}">
+								{{#each sectionOne.items}}
+                                <article>
+									<span class="{{classSpan}}">
+										<img src="{{image}}" alt="" />
+									</span>
+									<header class="{{classHeader}}">
+										<h3><a href="{{urlheader}}" class="{{classHeader}}">{{titleHeader}}</a></h3>
+										<p>{{nameHeader}}</p>
+									</header>
+								</article>
+								 {{/each}}
+							</section>
 
-  <link rel="stylesheet" href="css/frameworks-355fc5f5dc43030d495ea75b6bc8366695646a7566c13dd6ba2c2d358e1b5383.css">
-  <link rel="stylesheet" href="css/site-429acc2fc05149afec2a05196b3100560f117f753931d0afca46da6e1eeafe39.css">
+						<!-- Two -->
+                        
+							<section id="{{sectionTwo.id}}">
+								<div class="{{sectionTwo.class}}">
+									<header class="{{sectionTwo.classHeader}}">
+										<h2>{{sectionTwo.titleHeader}}</h2>
+									</header>
+									<p>{{sectionTwo.name}}</p>
+									<ul class="{{sectionTwo.ulClass}}">
+										<li><a href="{{sectionTwo.ulUrl}}" class="{{sectionTwo.ulClass}}">{{sectionTwo.ulTitle}}</a></li>
+									</ul>
+								</div>
+							</section>
 
-</head>
-<body>
-  <div class="jumbotron jumbotron-inverse" style="margin-bottom:1px;background-image:url('img/bg1.jpg');">
-    <div class="container-responsive">
-      <div class="columns">
-        <div class="homepage-hero-intro column">
-          <h1 class="display-heading-1 jumbotron-title">{{header}}</h1>
-          <p class="display-intro jumbotron-lead">{{description}}</p>
-        </div>
-        <div class="homepage-hero-signup column">
-          <div class="d-none-sm-dn">
-            <form accept-charset="UTF-8" action="/join" autocomplete="off" class="home-hero-signup js-signup-form" data-form-nonce="652353d3ac5a112c9df6b943ad60e6cc2eaf1e0d" method="post">
-              <div style="margin:0;padding:0;display:inline">
-                <input name="utf8" type="hidden" value="✓">
-                <input name="authenticity_token" type="hidden" value="+xi468NyjI9V5dnz2n7llB9ykjAyiy/rvpuqdraF8pu5Nx79kfw/lPf8yHI2rC2QsWsJY10EZ3EqWoOv7pOSYQ==">
-              </div>
-              <dl class="form">
-                <dd>
-                  <label class="form-label sr-only" for="user[login]">Pick a username</label>
-                  <input type="text" name="user[login]" class="form-control form-control-lg input-block" placeholder="Pick a username" data-autocheck-url="/signup_check/username" autofocus=""> </dd>
-              </dl>
-              <dl class="form">
-                <dd>
-                  <label class="form-label sr-only" for="user[email]">Enter your email address</label>
-                  <input type="text" name="user[email]" class="form-control form-control-lg input-block js-email-notice-trigger" placeholder="Your email address" data-autocheck-url="/signup_check/email"> </dd>
-              </dl>
-              <dl class="form">
-                <dd>
-                  <label class="form-label sr-only" for="user[password]">Create a password</label>
-                  <input type="password" name="user[password]" class="form-control form-control-lg input-block" placeholder="Create a password" data-autocheck-url="/signup_check/password"> </dd>
-                <p class="form-control-note">Use at least one letter, one numeral, and seven characters.</p>
-              </dl>
-              <input type="hidden" name="source" class="js-signup-source" value="form-home">
-              <button class="btn btn-theme-green btn-jumbotron btn-block" type="submit">Sign in for EasyWeb</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {{{contents}}}
-</body>
-</html>
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="field half first">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+{{/content}} {{/extend}}
