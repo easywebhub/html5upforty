@@ -1,0 +1,39 @@
+[
+    {
+        "name": "title",
+        "displayName": "title",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "items",
+        "displayName": "items",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "verticals",
+        "displayName": "verticals",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "tab",
+        "displayName": "tab",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "metadata",
+        "displayName": "metadata",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    }
+]

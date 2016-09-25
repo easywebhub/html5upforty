@@ -9,6 +9,7 @@
     "verticals":[
           { "url": "#", "title": "Get Started","class":"button special fit" },
           { "url": "#", "title": "Log In","class":"button fit" }
-    ]
-
+    ],
+    "tab":{"url":"#menu","title":"Menu"},
+    "metadata":"<strong>Forty</strong> <span>by HTML5 UP</span>"
 }

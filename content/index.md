@@ -2,11 +2,11 @@
 {
     "slug": "",
     "layout": "index.html",
-    "permalink": true,
+
     "title": "Home page of EasyWebHub Advanced Template",
-    "header": "How people build website","description": "Thousands of developers use EasyWebHub to build personal, company, blog, ecommerce websites, support their businesses, and work together on open source technologies.",
-    "tab":{"url":"#menu","title":"Menu"},
-    "metadata":"<strong>Forty</strong> <span>by HTML5 UP</span>", 
+    "header": "How people build website",
+    "description": "Thousands of developers use EasyWebHub to build personal, company, blog, ecommerce websites, support their businesses, and work together on open source technologies.",
+  
     "banner":{"title":"Hi, my name is Forty","metadata":"A responsive site template designed by HTML5 UP<br />and released under the Creative Commons.",
                                 "actions":{"url":"#one","title":"Get Started"}
                                 },
