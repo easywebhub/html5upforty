@@ -88,5 +88,12 @@
         "type": "Object",
         "validations": [],
         "required": false
+    },
+    {
+        "name": "permalink",
+        "displayName": "permalink",
+        "type": "Boolean",
+        "validations": [],
+        "required": false
     }
 ]
