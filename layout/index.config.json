@@ -38,5 +38,55 @@
         "validations": [],
         "viewOnly": false,
         "required": false
+    },
+    {
+        "name": "tab",
+        "displayName": "tab",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "metadata",
+        "displayName": "metadata",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "banner",
+        "displayName": "banner",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "sectionOne",
+        "displayName": "sectionOne",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "sectionTwo",
+        "displayName": "sectionTwo",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "sectionSplit",
+        "displayName": "sectionSplit",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "sectionContact",
+        "displayName": "sectionContact",
+        "type": "Object",
+        "validations": [],
+        "required": false
     }
 ]

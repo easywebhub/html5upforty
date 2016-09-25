@@ -1,0 +1,32 @@
+{
+    "title": "Handcrafted by Afnizar Nur Ghifari",
+                            
+                            
+     "icons": [{
+            "class": "icon alt fa-twitter",
+            "url": "#",
+             "title":"Twitter"
+        },
+        {
+            "class": "icon alt fa-facebook",
+            "url": "#",
+             "title":"Facebook"
+        },
+        {
+            "class": "icon alt fa-instagram",
+           "url": "#",
+             "title":"Instagram"
+        },
+        {
+            "class": "icon alt fa-github",
+          "url": "#",
+             "title":" GitHub"
+        }
+        ,
+        {
+            "class": "icon alt fa-linkedin",
+          "url": "#",
+             "title":" LinkedIn"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "title": "DRACO",
+    "items": [
+        { "url": "#", "title": "Home" },
+        {  "url": "#experiences", "title": "Landing" },
+        { "url": "#achievements", "title": "Generic" },
+        { "url": "#skills", "title": "Elements" }
+    ],
+    "verticals":[
+          { "url": "#", "title": "Get Started","class":"button special fit" },
+          { "url": "#", "title": "Log In","class":"button fit" }
+    ]
+
+}
