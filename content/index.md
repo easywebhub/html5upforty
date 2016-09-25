@@ -1,3 +1,4 @@
+---json
 
 {
     "slug": "",
@@ -40,3 +41,6 @@
                    }
                    }
 }
+
+---
+INDEX CONTENTS
