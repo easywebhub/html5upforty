@@ -1,3 +1,50 @@
+	
+<section id="contact">
+						<div class="{{contact.sectionContact.class}}">
+							<section>
+								<form method="post" action="#">
+                                    {{#each contact.sectionContact.form.inputItems}}
+									<div class="{{class}}">
+										<label for="{{lableFor}}">{{lableTitle}}</label>
+										<input type="{{inputType}}" name="{{inputName}}" id="{{inputId}}" />
+									</div>
+                                    {{/each}}
+                                
+									
+									<div class="field">
+										<label for="{{contact.sectionContact.form.textArea.label}}">{{contact.sectionContact.form.textArea.label}}</label>
+										<textarea name="{{contact.sectionContact.form.textArea.name}}" id="{{contact.sectionContact.form.textArea.id}}" rows="{{contact.sectionContact.form.textArea.rows}}"></textarea>
+									</div>
+									<ul class="actions">
+                                        {{#each contact.sectionContact.form.actions}}
+										<li><input type="{{type}}" value="{{value}}" class="{{class}}" /></li>
+										
+                                        {{/each}}
+									</ul>
+								</form>
+							</section>
+                           
+							<section class="split">
+								<section>
+									<div class="{{contact.sectionSplit.section.class}}">
+										<span class="{{contact.sectionSplit.section.spanClass}}"></span>
+										<h3>{{sectionSplit.section.h3}}</h3>
+										<a href="{{contact.sectionSplit.section.url}}">{{contact.sectionSplit.section.titleA}}</a>
+									</div>
+								</section>
+                                {{#each contact.sectionSplit.items}}
+								<section>
+									<div class="{{class}}">
+										<span class="{{spanClass}}"></span>
+										<h3>{{h3}}</h3>
+										<span>{{{titleSpan}}}</span>
+									</div>
+								</section>
+                                {{/each}}
+							
+							</section>
+						</div>
+					</section>
 	<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">

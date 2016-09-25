@@ -38,26 +38,5 @@
         "validations": [],
         "viewOnly": false,
         "required": false
-    },
-    {
-        "name": "permalink",
-        "displayName": "permalink",
-        "type": "Boolean",
-        "validations": [],
-        "required": false
-    },
-    {
-        "name": "main",
-        "displayName": "main",
-        "type": "Object",
-        "validations": [],
-        "required": false
-    },
-    {
-        "name": "banner",
-        "displayName": "banner",
-        "type": "Object",
-        "validations": [],
-        "required": false
     }
 ]
