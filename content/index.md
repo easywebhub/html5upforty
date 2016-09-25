@@ -1,5 +1,4 @@
 ---json
-
 {
     "slug": "",
     "layout": "index.html",
@@ -41,6 +40,5 @@
                    }
                    }
 }
-
 ---
 INDEX CONTENTS
